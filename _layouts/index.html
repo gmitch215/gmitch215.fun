@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<script src="/js/search.js"></script>
+
+<div class="box" id="top">
+    {{ content }}
+</div>
+
+<div class="box">
+    <h3>featuring {{ site.data.games | size }} games</h3>
+    <input type="text" id="game-search" placeholder="search..." />
+</div>
+
+<div id="game-list">
+    {% for game in site.data.games %}
+    <a class="game {{ game.tags }}" id="{{ game.id }}" href="/games/{{ game.id }}" title="{{ game.name }}">
+        <img src="/assets/games/{{ game.id }}.png" alt="{{ game.name }}">
+    </a>
+    {% endfor %}
+</div>

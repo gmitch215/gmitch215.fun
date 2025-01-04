@@ -1,0 +1,11 @@
+@media (max-width: 1000px) {
+    footer {
+        padding-top: 2vh;
+        padding-bottom: 8vh;
+    }
+
+    footer div {
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+}

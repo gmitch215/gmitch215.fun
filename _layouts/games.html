@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="box" id="top">
+    <a href="/" title="Back">gmitch215.fun</a>
+</div>
+
+<div class="box" id="game">
+    <iframe src="{{ page.link }}"></iframe>
+    <p>{{ page.description }}</p>
+
+    {% if page.links %}
+    <div class="box horizontal">
+        {% for link in page.links %}
+        <a href="{{ link.url }}" title="{{ link.name }}" target="_blank">{{ link.name }}</a>
+        {% endfor %}
+    {% endif %}
+    </div>
+</div>

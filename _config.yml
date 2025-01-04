@@ -1,0 +1,20 @@
+title: gmitch215.fun
+description: fun things made by gregory
+
+baseurl: ""
+url: "https://gmitch215.fun"
+
+github: gmitch215/gmitch215.fun
+github_username: gmitch215
+
+plugins:
+  - jekyll-datapage-generator
+
+page_gen-dirs: true
+
+page_gen:
+  - data: games
+    name: id
+    title: name
+
+markdown: kramdown

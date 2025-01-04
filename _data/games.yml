@@ -1,0 +1,14 @@
+- id: combinatory
+  name: Combinatory
+  description: Combinatory by Calculus Games
+  link: https://play.combinatory.xyz
+  links:
+    - name: Site
+      url: https://play.combinatory.xyz
+    - name: GitHub
+      url: https://github.com/CalculusGames/calculatory
+    - name: Twitter
+      url: https://twitter.com/calcugames
+    - name: Instagram
+      url: https://instagram.com/calcugames
+  tags: [puzzle, game, math, logic]

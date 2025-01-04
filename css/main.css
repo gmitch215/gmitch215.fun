@@ -1,0 +1,221 @@
+/* Copyright (c) 2025-Present Gregory Mitchell */
+
+:root {
+    --bg: #e0f7be;
+    --bg-2: #bfd1a1;
+    --bg-3: #d8ffd3;
+
+    --text: #208e45;
+
+    --link-color: #e0db55;
+    --link-color-2: #fcf887;
+}
+
+html {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+main {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    min-height: 88vh;
+    min-width: 100vw;
+
+    padding-bottom: 4vh !important;
+}
+
+html, body, main {
+    scroll-behavior: smooth;
+    font-family: "Jost", serif;
+    background: var(--bg);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p, a {
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+    color: var(--link-color);
+    transition: color 0.25s ease-in-out;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    margin-top: 2vh;
+    row-gap: 2vh;
+    column-gap: 4vw;
+
+    color: var(--text);
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+/* Top */
+
+#top {
+    font-family: "Delicious Handrawn", sans-serif;
+}
+
+#top img {
+    min-width: 64px;
+    width: 10vw;
+    min-height: 64px;
+    height: auto;
+}
+
+#top h1, #top a {
+    font-size: 3em;
+    margin: 0;
+
+    padding-bottom: 1vh;
+    border-bottom: 4px solid var(--text);
+    transition: border-bottom 0.25s ease-in-out;
+}
+
+#top a:hover {
+    color: var(--text);
+    border-bottom: 4px solid var(--link-color);
+    transition: border-bottom 0.25s ease-in-out;
+}
+
+#top h2 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+/* Index */
+
+#game-search {
+    width: 50%;
+    height: 4vh;
+
+    border-radius: 0.75em;
+    border: 6px solid var(--bg-2);
+    background-color: white;
+    outline: none;
+    box-shadow: var(--shadow);
+
+    padding-left: 1vw;
+    margin-bottom: 4vh;
+}
+
+#game-list {
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 0.25vw;
+    row-gap: 1vh;
+
+    justify-items: center;
+}
+
+.game {
+    min-width: 256px;
+    width: 20vw;
+    min-height: 128px;
+    height: 15vh;
+    
+    border: 16px solid var(--bg-2);
+    border-radius: 4px;
+
+    background: var(--bg-2);
+
+    transition: transform 0.25s ease-in-out;
+}
+
+.game:hover {
+    transform: scale(1.05);
+    transition: transform 0.25s ease-in-out;
+}
+
+.game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+/* Games */
+
+#game {
+    margin-top: 8vh;
+}
+
+#game iframe {
+    width: 80vw;
+    min-height: 144px;
+    height: 80vh;
+
+    border: 24px solid var(--bg-2);
+    border-radius: 16px;
+}
+
+#game a {
+    background-color: var(--bg-2);
+    padding: 1vh 1vw;
+    border-radius: 4px;
+
+    transition: background-color 0.25s ease-in-out;
+}
+
+#game a:hover {
+    color: var(--text);
+    background-color: var(--bg-3);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-2);
+    height: 5vh;
+    width: 100%;
+
+    display: flex;
+    padding-bottom: 5vh;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+}
+
+.footer-text {
+    color: black;
+    font-size: calc(6px + 1vh);
+    padding-top: 3vh;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1vw;
+}
+
+footer div a {
+    color: var(--link-color-2);
+}
