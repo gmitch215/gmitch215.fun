@@ -40,7 +40,7 @@ html, body, main {
     padding: 0;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, h4, p, a {
     color: var(--text);
 }
 
@@ -68,8 +68,21 @@ a:hover {
     color: var(--text);
 }
 
+.banner {
+    width: auto;
+    height: 60vh;
+    justify-self: center;
+    box-shadow: var(--shadow);
+    border-radius: 5em !important;
+    transition: transform 0.5s ease-in-out;
+}
+
 .horizontal {
     flex-direction: row;
+}
+
+.nomargin h1, .nomargin h2, .nomargin h3, .nomargin h4, .nomargin p {
+    margin: 0;
 }
 
 /* Top */
