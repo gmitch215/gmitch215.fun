@@ -11,7 +11,8 @@
       url: https://twitter.com/calcugames
     - name: Instagram
       url: https://instagram.com/calcugames
-  tags: [puzzle, game, math, logic]
+  tags: [puzzle, math, logic]
+  calculus-games: true
 - id: window-pong
   name: Window Pong
   description: Play Pong with your windows!
@@ -23,6 +24,7 @@
       url: https://github.com/gmitch215-dev/window-pong
     - name: Instagram
       url: https://instagram.com/gmitch215.dev
+  tags: [pong, windows]
 - id: mangaka-quiz
   name: Mangaka Quiz
   description: A quiz game to test your knowledge of manga artists.
@@ -45,3 +47,4 @@
       url: https://github.com/gmitch215-dev/css-animation-visualizer
     - name: Instagram
       url: https://instagram.com/gmitch215.dev
+  tags: [simulator, css, animation]

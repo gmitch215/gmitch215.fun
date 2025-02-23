@@ -6,6 +6,14 @@ layout: default
 
 <div class="box" id="top">
     {{ content }}
+
+    <div class="box horizontal">
+        {% for link in site.data.links %}
+        <a href="{{ link.url }}" title="{{ link.name }}">
+            <img src="{{ link.img }}" alt="{{ link.name }}">
+        </a>
+        {% endfor %}
+    </div>
 </div>
 
 <div class="box">
@@ -15,8 +23,11 @@ layout: default
 
 <div id="game-list">
     {% for game in site.data.games %}
-    <a class="game {{ game.tags }}" id="{{ game.id }}" href="/games/{{ game.id }}" title="{{ game.name }}">
+    <a class="game {{ game.tags | join: ' ' }}" id="{{ game.id }}" href="/games/{{ game.id }}" title="{{ game.name }}">
         <img src="/assets/games/{{ game.id }}.png" alt="{{ game.name }}">
+        {% if game.calculus-games %}
+        <img src="https://cdn.calcugames.xyz/logo.png" alt="CalcuGames" class="calcugames">
+        {% endif %}
     </a>
     {% endfor %}
 </div>

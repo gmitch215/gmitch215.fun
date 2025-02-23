@@ -1,0 +1,9 @@
+- name: GitHub
+  url: https://github.com/gmitch215
+  img: /assets/links/github.png
+- name: Patreon
+  url: https://www.patreon.com/gmitch215
+  img: /assets/links/patreon.png
+- name: Discord
+  url: https://discord.com/users/572173428086538270
+  img: /assets/links/discord.png

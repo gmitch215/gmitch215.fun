@@ -118,6 +118,34 @@ a:hover {
     margin-top: 0;
 }
 
+#top a:has(img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1vw;
+
+    border-bottom: none;
+}
+
+#top a:has(img):hover {
+    color: none;
+    border-bottom: none;
+    transition: none;
+}
+
+#top a img {
+    max-width: 64px;
+    max-height: 64px;
+    object-fit: cover;
+
+    transition: transform 0.25s ease-in-out;
+}
+
+#top a img:hover {
+    transform: scale(1.1);
+    transition: transform 0.25s ease-in-out;
+}
+
 /* Index */
 
 #game-search {
@@ -138,9 +166,9 @@ a:hover {
     display: grid;
 
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     column-gap: 0.25vw;
-    row-gap: 1vh;
+    row-gap: 3vh;
 
     justify-items: center;
 }
@@ -170,6 +198,20 @@ a:hover {
     object-fit: cover;
 
     border-radius: 8px;
+}
+
+.game img.calcugames {
+    aspect-ratio: 1;
+    width: 3vw;
+    height: auto;
+
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 48px;
+    max-height: 48px;
+
+    float: right;
+    transform: translateY(-1vh) translateX(2.5vw);
 }
 
 /* Games */
