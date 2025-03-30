@@ -48,3 +48,15 @@
     - name: Instagram
       url: https://instagram.com/gmitch215.dev
   tags: [simulator, css, animation]
+- id: image-graph-creator
+  name: Image Graph Creator
+  description: Create graphs from images.
+  link: https://gmitch215-dev.github.io/image-graph-creator/
+  links:
+    - name: Site
+      url: https://gmitch215-dev.github.io/image-graph-creator/
+    - name: GitHub
+      url: https://github.com/gmitch215-dev/image-graph-creator
+    - name: Instagram
+      url: https://instagram.com/gmitch215.dev
+  tags: [image, animation, graph]
